@@ -263,7 +263,7 @@ section{padding:120px 5% 96px;max-width:1400px;margin:0 auto;position:relative}
 @media(max-width:520px){.mPics{grid-template-columns:1fr}.mPics img{height:220px}}
 
 /* ================= BOOSTING ================= */
-.bwrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+.bwrap{max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
 .bgrp{--acc:#E01228; --acc2:#FF2A42; --accRGB:224,18,40;
   position:relative;padding:26px 24px 22px;border:1px solid rgba(var(--accRGB),.30);border-radius:14px;
   background:rgba(var(--accRGB),.035);box-shadow:inset 0 0 0 1px rgba(255,255,255,.03);
@@ -308,6 +308,27 @@ section{padding:120px 5% 96px;max-width:1400px;margin:0 auto;position:relative}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
 .cols h4{font-family:'Consolas',monospace;font-size:10px;letter-spacing:.22em;color:var(--dim);margin-bottom:13px;
   padding-left:9px;border-left:2px solid rgba(var(--accRGB),.5)}
+.cols5{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:16px}
+.cols5 .brow{padding:10px 13px}
+.cols5 .brow .r{font-size:.8rem;line-height:1.25}
+.cols5 .brow .c{font-size:.78rem;padding:3px 9px}
+@media(max-width:1080px){.cols5{grid-template-columns:repeat(3,1fr)!important}}
+@media(max-width:760px){.cols5{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:520px){.cols5{grid-template-columns:1fr!important}}
+
+/* Extra Modes: 4 ladders side by side, sized so long names fit */
+.cols4{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px}
+.cols4 .brow{padding:9px 11px}
+.cols4 .brow .r{font-size:.72rem;line-height:1.2}
+.cols4 .brow .c{font-size:.72rem;padding:3px 8px}
+@media(max-width:1080px){.cols4{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:560px){.cols4{grid-template-columns:1fr!important}}
+
+/* Soccar (Competitive Ranks): 3 across so each tier sits on its own row */
+.btable.soccar{grid-template-columns:repeat(3,1fr)!important}
+.btable.soccar .r{font-size:.9rem}
+@media(max-width:900px){.btable.soccar{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:560px){.btable.soccar{grid-template-columns:1fr!important}}
 
 /* ================= PLANS ================= */
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:26px;max-width:900px;margin:0 auto}
@@ -430,12 +451,12 @@ html.noprop .card:hover::before{
 <div class="hud" id="hud">
   <div class="corner tl">
     <div class="brand">BYTE HAVEN</div>
-    <div class="sub">// SECURE. OPTIMIZE. ELEVATE.</div>
+    <div class="sub">// TOOLS. SOFTWARE. MARKETPLACE.</div>
     <div class="meta">Byte Haven Services<br>All Rights Reserved © 2026</div>
   </div>
   <div class="corner tr">
     <div class="tag">///// MANIFEST</div>
-    We build players, not<br>shortcuts. Every rank<br>earned by hand, every<br>session run by someone<br>who has been there.
+    We build the tools,<br>you get the edge. Every<br>script, app, and utility<br>made and tested in-house<br>before it ships.
   </div>
   <div class="corner bl">
     <span class="live">● ONLINE</span> &nbsp;18 members<br>
@@ -482,10 +503,10 @@ html.noprop .card:hover::before{
 
 	
 <div class="stats rv">
-  <div class="stat"><b data-n="40" data-s="+">0</b><span>Fast And Reliable</span></div>
-  <div class="stat"><b data-n="11" data-s="+">0</b><span>24/7 Support</span></div>
-  <div class="stat"><b data-n="24" data-s="/7">0</b><span>Boostings</span></div>
-  <div class="stat"><b data-n="100" data-s="%">0</b><span>Tools/Apps</span></div>
+  <div class="stat"><b data-n="40" data-s="+">0</b><span>Tools &amp; Scripts</span></div>
+  <div class="stat"><b data-n="11" data-s="+">0</b><span>Products Live</span></div>
+  <div class="stat"><b data-n="24" data-s="/7">0</b><span>Support</span></div>
+  <div class="stat"><b data-n="100" data-s="%">0</b><span>Made In-House</span></div>
 </div>
 
 <section id="services">
@@ -499,9 +520,9 @@ html.noprop .card:hover::before{
       <span class="spot"></span><span class="pip tl">J<s>♣</s></span><span class="pip br">J<s>♣</s></span>
       <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 15c-1 2-1 4-1 4s2 0 4-1"/><path d="M9 18c-2-1-3-2-4-4 1-6 5-10 11-11 1 6-1 12-7 15Z"/><circle cx="14.5" cy="9.5" r="1.6"/></svg></div>
       <h3>RL Boost</h3>
-      <p>GC2+ rank boosters. Totally safe with fast delivery and accuracy.</p>
+      <p>Hand-played rank boosting — safe, accurate, and fast delivery.</p>
       
-      <ul class="feat"><li>Competitive ranks</li><li>Tournament wins</li><li>Extra-mode boosting</li><li>Fast delivery</li><li>Verified boosters</li></ul>
+      <ul class="feat"><li>Competitive ranks</li><li>Tournament wins</li><li>Extra-mode boosting</li><li>Fast delivery</li><li>Safe &amp; secure</li></ul>
       <button class="cbtn" onclick="go('rlboost-pricing')" data-magnet>Learn More</button></div></div>
 	  
 	   <div class="slot"><div class="card">
@@ -510,7 +531,7 @@ html.noprop .card:hover::before{
       <h3>FN Boost</h3>
       <p>Fortnite rank boosting from real players. Fast, safe, and account-secure.</p>
       
-      <ul class="feat"><li>Competitive ranks</li><li>Arena points</li><li>Fast delivery</li><li>Verified boosters</li><li>No cheats/bots</li></ul>
+      <ul class="feat"><li>Competitive ranks</li><li>Arena points</li><li>Fast delivery</li><li>Safe &amp; secure</li><li>No cheats/bots</li></ul>
       <button class="cbtn" onclick="go('fnboost-pricing')" data-magnet>Learn More</button></div></div>
 
     <div class="slot"><div class="card">
@@ -519,7 +540,7 @@ html.noprop .card:hover::before{
       <h3>BS Boost</h3>
       <p>Brawl Stars trophy &amp; rank pushing. Hand-played, safe, and fast.</p>
       
-      <ul class="feat"><li>Trophy pushing</li><li>Rank pushing</li><li>Fast delivery</li><li>Verified boosters</li><li>No cheats/bots</li></ul>
+      <ul class="feat"><li>Trophy pushing</li><li>Rank pushing</li><li>Fast delivery</li><li>Safe &amp; secure</li><li>No cheats/bots</li></ul>
       <button class="cbtn" onclick="go('bsboost-pricing')" data-magnet>Learn More</button></div></div>
 	  
 	  <div class="slot"><div class="card">
@@ -598,8 +619,8 @@ html.noprop .card:hover::before{
   <div class="bwrap">
     <div class="gameset" data-game="rl">
     <div class="bgrp rv" data-game="rl" id="rlboost-pricing"><h3><span class="gtag">ROCKET LEAGUE</span>Competitive Ranks</h3>
-      <div class="btable stg">
-		<div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+      <div class="btable stg soccar">
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
@@ -624,7 +645,7 @@ html.noprop .card:hover::before{
     <div class="bgrp rv" data-game="rl"><h3><span class="gtag">ROCKET LEAGUE</span>Tournaments</h3>
       <div class="cols">
         <div><h4>1-TIME WINNER</h4><div class="btable stg" style="grid-template-columns:1fr">
-		  <div class="brow"><span class="r">Bronze</span><span class="c">$5</span></div>
+          <div class="brow"><span class="r">Bronze</span><span class="c">$5</span></div>
           <div class="brow"><span class="r">Silver</span><span class="c">$5</span></div>
           <div class="brow"><span class="r">Gold</span><span class="c">$5</span></div>
           <div class="brow"><span class="r">Platinum</span><span class="c">$7</span></div>
@@ -633,7 +654,7 @@ html.noprop .card:hover::before{
           <div class="brow p"><span class="r">Grand Champion</span><span class="c">$15</span></div>
           <div class="brow p s"><span class="r">Super Sonic Legend</span><span class="c">$30</span></div></div></div>
         <div><h4>3-TIME WINNER</h4><div class="btable stg" style="grid-template-columns:1fr">
-	      <div class="brow"><span class="r">Bronze</span><span class="c">$10</span></div>
+          <div class="brow"><span class="r">Bronze</span><span class="c">$10</span></div>
           <div class="brow"><span class="r">Silver</span><span class="c">$10</span></div>
           <div class="brow"><span class="r">Gold</span><span class="c">$15</span></div>
           <div class="brow"><span class="r">Platinum</span><span class="c">$20</span></div>
@@ -643,9 +664,9 @@ html.noprop .card:hover::before{
           <div class="brow p s"><span class="r">Super Sonic Legend</span><span class="c">$75</span></div></div></div>
       </div></div>
     <div class="bgrp rv" data-game="rl"><h3><span class="gtag">ROCKET LEAGUE</span>Extra Modes</h3>
-      <div class="cols stg">
+      <div class="cols cols4 stg">
         <div><h4>HOOPS</h4><div class="btable" style="grid-template-columns:1fr">
-<div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
@@ -666,52 +687,80 @@ html.noprop .card:hover::before{
         <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
         <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
         <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
-        <div><h4>RUMBLE</h4><div class="btable" style="grid-template-columns:1fr">
-          <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Silver 2 → Silver 3</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Silver 3 → Gold 1</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Gold 1 → Gold 2</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Gold 2 → Gold 3</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Gold 3 → Platinum 1</span><span class="c">$10</span></div>
-        <div class="brow"><span class="r">Platinum 1 → Platinum 2</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Platinum 2 → Platinum 3</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Platinum 3 → Diamond 1</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Diamond 1 → Diamond 2</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Diamond 2 → Diamond 3</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Diamond 3 → Champion 1</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Champion 1 → Champion 2</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Champion 2 → Champion 3</span><span class="c">$7</span></div>
-        <div class="brow p"><span class="r">Champion 3 → Grand Champion 1</span><span class="c">$10</span></div>
-        <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
-        <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
-        <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
-        <div><h4>SNOWDAY</h4><div class="btable" style="grid-template-columns:1fr">
-          <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Silver 2 → Silver 3</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Silver 3 → Gold 1</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Gold 1 → Gold 2</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Gold 2 → Gold 3</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Gold 3 → Platinum 1</span><span class="c">$10</span></div>
-        <div class="brow"><span class="r">Platinum 1 → Platinum 2</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Platinum 2 → Platinum 3</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Platinum 3 → Diamond 1</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Diamond 1 → Diamond 2</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Diamond 2 → Diamond 3</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Diamond 3 → Champion 1</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Champion 1 → Champion 2</span><span class="c">$7</span></div>
-        <div class="brow"><span class="r">Champion 2 → Champion 3</span><span class="c">$7</span></div>
-        <div class="brow p"><span class="r">Champion 3 → Grand Champion 1</span><span class="c">$10</span></div>
-        <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
-        <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
-        <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
+        </div></div>
         <div><h4>DROPSHOT</h4><div class="btable" style="grid-template-columns:1fr">
-          <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 2 → Silver 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 3 → Gold 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Gold 1 → Gold 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 2 → Gold 3</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 3 → Platinum 1</span><span class="c">$10</span></div>
+        <div class="brow"><span class="r">Platinum 1 → Platinum 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 2 → Platinum 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 3 → Diamond 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Diamond 1 → Diamond 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 2 → Diamond 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 3 → Champion 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Champion 1 → Champion 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Champion 2 → Champion 3</span><span class="c">$7</span></div>
+        <div class="brow p"><span class="r">Champion 3 → Grand Champion 1</span><span class="c">$10</span></div>
+        <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
+        <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
+        <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
+        </div></div>
+        <div><h4>SNOWDAY</h4><div class="btable" style="grid-template-columns:1fr">
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 2 → Silver 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 3 → Gold 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Gold 1 → Gold 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 2 → Gold 3</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 3 → Platinum 1</span><span class="c">$10</span></div>
+        <div class="brow"><span class="r">Platinum 1 → Platinum 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 2 → Platinum 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 3 → Diamond 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Diamond 1 → Diamond 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 2 → Diamond 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 3 → Champion 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Champion 1 → Champion 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Champion 2 → Champion 3</span><span class="c">$7</span></div>
+        <div class="brow p"><span class="r">Champion 3 → Grand Champion 1</span><span class="c">$10</span></div>
+        <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
+        <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
+        <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
+        </div></div>
+        <div><h4>RUMBLE</h4><div class="btable" style="grid-template-columns:1fr">
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 2 → Silver 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Silver 3 → Gold 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Gold 1 → Gold 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 2 → Gold 3</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Gold 3 → Platinum 1</span><span class="c">$10</span></div>
+        <div class="brow"><span class="r">Platinum 1 → Platinum 2</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 2 → Platinum 3</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Platinum 3 → Diamond 1</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Diamond 1 → Diamond 2</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 2 → Diamond 3</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Diamond 3 → Champion 1</span><span class="c">$5</span></div>
+        <div class="brow"><span class="r">Champion 1 → Champion 2</span><span class="c">$7</span></div>
+        <div class="brow"><span class="r">Champion 2 → Champion 3</span><span class="c">$7</span></div>
+        <div class="brow p"><span class="r">Champion 3 → Grand Champion 1</span><span class="c">$10</span></div>
+        <div class="brow p"><span class="r">Grand Champion 1 → Grand Champion 2</span><span class="c">$15</span></div>
+        <div class="brow p"><span class="r">Grand Champion 2 → Grand Champion 3</span><span class="c">$18</span></div>
+        <div class="brow p s"><span class="r">Grand Champion 3 → Super Sonic Legend</span><span class="c">$20</span></div>
+        </div></div>
+      </div></div>
+    <div class="bgrp rv" data-game="rl"><h3><span class="gtag">ROCKET LEAGUE</span>Heatseeker</h3>
+      <div class="btable stg soccar">
+        <div class="brow"><span class="r">Bronze 1 → Bronze 2</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 2 → Bronze 3</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Bronze 3 → Silver 1</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Silver 1 → Silver 2</span><span class="c">$5</span></div>
@@ -742,18 +791,21 @@ html.noprop .card:hover::before{
         <div class="brow"><span class="r">Platinum → Diamond</span><span class="c">$3</span></div>
         <div class="brow"><span class="r">Diamond → Elite</span><span class="c">$5</span></div>
         <div class="brow p"><span class="r">Elite → Champion</span><span class="c">$8</span></div>
-        <div class="brow p"><span class="r">Champion → Unreal</span><span class="c">$13</span></div>
-        <div class="brow p s"><span class="r">Unreal 2</span><span class="c">$200</span></div>
+        <div class="brow p"><span class="r">Champion → Unreal 1</span><span class="c">$13</span></div>
+        <div class="brow p s"><span class="r">Unreal 1 → Unreal 2</span><span class="c">$150</span></div>
       </div></div>
     <div class="bgrp rv" data-game="bs" id="bsboost-pricing"><h3><span class="gtag">BRAWL STARS</span>BS Boost — Trophies</h3>
       <div class="btable stg">
-        <div class="brow"><span class="r">Bronze → Silver</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Silver → Gold</span><span class="c">$3</span></div>
-        <div class="brow"><span class="r">Gold → Diamond</span><span class="c">$5</span></div>
+		<div class="brow p"><span class="r">500 Trophies</span><span class="c">$3</span></div>
+        <div class="brow"><span class="r">Bronze → Silver</span><span class="c">$1</span></div>
+        <div class="brow"><span class="r">Silver → Gold</span><span class="c">$1</span></div>
+        <div class="brow"><span class="r">Gold → Diamond</span><span class="c">$2</span></div>
         <div class="brow"><span class="r">Diamond → Mythic</span><span class="c">$5</span></div>
-        <div class="brow"><span class="r">Mythic → Legendary</span><span class="c">$8</span></div>
-        <div class="brow p"><span class="r">Legendary → Masters</span><span class="c">$12</span></div>
-        <div class="brow p s"><span class="r">Masters (per 1000 trophies)</span><span class="c">$15</span></div>
+        <div class="brow"><span class="r">Mythic → Legendary 1</span><span class="c">$10</span></div>
+		<div class="brow"><span class="r">Legendary 1 → Legendary 2</span><span class="c">$10</span></div>
+		<div class="brow"><span class="r">Legendary 2→ Legendary 3</span><span class="c">$15</span></div>
+        <div class="brow p"><span class="r">Legendary 3 → Masters 1</span><span class="c">$15</span></div>
+        <div class="brow p s"><span class="r">Masters 1 → Masters 2</span><span class="c">$20</span></div>
       </div></div>
   </div>
 </section>
@@ -772,27 +824,27 @@ html.noprop .card:hover::before{
       <span class="spot"></span><span class="pip tl">?<s>♠</s></span><span class="pip br">?<s>♠</s></span>
       <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 9V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 6v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-6Z"/><path d="M13 5v3M13 11v2M13 16v3"/></svg></div>
       <h3>Open a Ticket</h3>
-      <p>Jump into Discord and open a ticket — coaching, boosting, and account questions all handled fast.</p>
+      <p>Jump into Discord and open a ticket — orders, setup help, and product questions all handled fast.</p>
       
       <button class="cbtn" onclick="dc()" data-magnet>Open Ticket</button></div></div>
     <div class="slot"><div class="card">
       <span class="spot"></span><span class="pip tl">!<s>♥</s></span><span class="pip br">!<s>♥</s></span>
       <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.4 3.4 8.4 8 9.5 4.6-1.1 8-5.1 8-9.5V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-      <h3>Is boosting ban-safe?</h3>
-      <p>Yes. Every boost is hand-played by real GC2+ players — no cheats, bots, or third-party software.</p>
+      <h3>Are the tools safe to use?</h3>
+      <p>Yes. Every tool is built and tested in-house before release — no malware, no sketchy third-party junk.</p>
       
-      <button class="cbtn" onclick="go('boosting')" data-magnet>See Pricing</button></div></div>
+      <button class="cbtn" onclick="go('services')" data-magnet>Browse Tools</button></div></div>
   </div>
 </section>
 
 
 
 <div class="final">
-  <h2 class="rv" data-scramble>READY TO ELEVATE?</h2>
-  <p class="rv">Join the players already climbing with Byte Haven.</p>
+  <h2 class="rv" data-scramble>GET THE TOOLS.</h2>
+  <p class="rv">Join the players already running Byte Haven tools.</p>
   <a href="https://discord.gg/nCYkVRStG" target="_blank" rel="noopener" class="pbtn rv" data-magnet>Join the Discord</a>
 </div>
-<footer>SECURE · OPTIMIZE · ELEVATE — © 2026 BYTE HAVEN SERVICES</footer>
+<footer>TOOLS · SOFTWARE · MARKETPLACE — © 2026 BYTE HAVEN SERVICES</footer>
 </div>
 
 <div class="mOverlay" id="mOverlay" onclick="if(event.target===this)closeModal()">
@@ -897,9 +949,9 @@ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 (function(){
   const lines=[
     '<b>&gt;</b> mounting /byte-haven/core ......... <em>OK</em>',
-    '<b>&gt;</b> verifying roster signatures ...... <em>11 OK</em>',
-    '<b>&gt;</b> loading coaching modules ......... <em>OK</em>',
-    '<b>&gt;</b> policy: <em>HAND-PLAYED ONLY</em>',
+    '<b>&gt;</b> verifying product builds ......... <em>OK</em>',
+    '<b>&gt;</b> loading tool library ............. <em>OK</em>',
+    '<b>&gt;</b> policy: <em>BUILT IN-HOUSE</em>',
     '<b>&gt;</b> establishing orbit ............... <em>OK</em>',
     '<b>&gt;</b> haven online.'
   ];
